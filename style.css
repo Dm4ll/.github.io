@@ -1,0 +1,63 @@
+/* 1. У всех абзацев отступ снизу 12 пикселей.
+   2. Заголовков первых трёх уровней:
+       -вес шрифта 400
+       -отступ снизу 0
+   3. У заголовка первого уровня размер шрифта 36 пикселей.
+   4. У заголовка второго уровня:
+       -размер шрифта 32 пикселя
+       -граница снизу толщиной 1 пиксель серого цвета
+       -отступ снизу 8 пикселей
+   5. У заголовка третьего уровня размер шрифта 20 пикселей.
+   6. У #header:
+       -отступ снизу 32 пикселя
+       -выравнивание текста по центру
+   7. У #footer:
+       -отступ сверху 64 пикселя
+       -выравнивание текста по центру */
+
+body {
+  font-family: Georgia;
+  font-size: 16px;
+  margin: 0 auto;   
+  max-width: 800px; 
+  line-height: 1.5;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#header {
+    margin-bottom: 32px;
+    text-align:  center;
+}
+
+#footer {
+    margin-top: 64px;
+    text-align:  center;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+h1 {
+font-size: 36px
+}
+
+h2 {
+    font-size: 32px;
+    border-bottom-style:solid;
+    border-width:1px;
+    border-color:gray;
+    margin-bottom: 8px
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* CSS условия выполнены */
